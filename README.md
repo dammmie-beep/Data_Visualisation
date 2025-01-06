@@ -103,7 +103,7 @@ From the 81 available variables, the analysis focused on 23 key features, ensuri
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ProsperLoanAnalysis.git
+   https://github.com/dammmie-beep/Data_Visualisation
    ```
 2. Load the dataset and run the Jupyter Notebook.
 3. Explore the visualizations and insights presented in the analysis.
