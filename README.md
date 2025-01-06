@@ -1,5 +1,4 @@
-# (Prosper Loan Dataset Exploration )
-## by (Rashidat Sikiru)
+# Prosper Loan Dataset Exploration 
 
 
 ## Dataset
