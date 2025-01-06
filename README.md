@@ -1,30 +1,117 @@
-# Prosper Loan Dataset Exploration 
+# Prosper Loan Dataset Exploration
 
+## Introduction
 
-## Dataset
+This project involves the exploration and analysis of the **Prosper Loan Dataset**, which contains 113,937 loan records with 81 variables per loan. These variables include information such as loan amount, borrower rate (interest rate), loan status, borrower income, and more. To simplify visualization and analysis, the dataset was reduced to 23 key features.
 
-This data set contains 113,937 loans with 81 variables on each loan, including loan amount, borrower rate (or interest rate), current loan status, borrower income, and many others. To make visualisation easier, some features were removed and we were left with 23 features
+The analysis provides insights into borrower demographics, loan distribution, Prosper ratings, and factors influencing loan amounts, interest rates, and repayment behavior.
 
+---
 
+## Dataset Overview
+
+The dataset includes information on:
+- Loan amount and repayment status
+- Borrower rate (interest rate)
+- Borrower income range and employment status
+- Prosper ratings (both numeric and alpha)
+- Loan purpose (e.g., debt consolidation, home improvement)
+- Homeownership status
+
+### Features Used in This Analysis
+From the 81 available variables, the analysis focused on 23 key features, ensuring clarity and relevance in the visualizations and insights.
+
+---
 
 ## Summary of Findings
 
-* The loan Rapyemnt status of most borrowers falls most in the categoery of current followed by the completed status. * Most of the borrowers  are employed, followed by the full time employee borrowers.* The top ten borrowing states are CA,TX,NY,FL,IL,OH,GA,VA,NJ,PA
-*  ~ 31% of the borrowers falls between the income range $50,000 - $74,999 ,~28% falls between the income range of $25,000 - $49,999, ~18% falls in the income range of $100,000. * Majority of the borrowers have other occupations not listed, followed by borrowers that are professioners, then borrowers who are computer programmers. * The highest prosper rate is 8 followed by 4.
-* Majority of the borrowers used the loans for Debt consolidation, other things not included, home construction. *   The highest prosper rating alpha is C and the least rating alpha is AA. 
-* Loan original amount and monthly loan payment is highly correlated and it is expected and borrowers interest rate and proper score are highly negatively correlated, Borrower interest rate and loan amount are -negatively correlated.* Majority of the borrowers with highest loan amount are taken by Employed, this is followed by others and fulltime employees. * The range of the salaries stated is higher for employed borrowers.* Loan OriginalAmount is highest for A and B Prosper ratings, when compared with income range - it is following a normal or expected trend that more salary borrowers are having higher loanoriginalamount
+### Borrower Demographics
+1. **Employment Status**: 
+   - Most borrowers are employed, followed by full-time employees.
+2. **Income Ranges**:
+   - ~31% of borrowers earn $50,000–$74,999.
+   - ~28% earn $25,000–$49,999.
+   - ~18% earn $100,000 or more.
+3. **Occupations**:
+   - Majority of borrowers fall under "Other" occupations, followed by professionals and computer programmers.
 
+### Loan Status and Prosper Ratings
+4. **Loan Status**:
+   - Most loans are categorized as *Current*, followed by *Completed* loans.
+5. **Prosper Ratings**:
+   - The highest Prosper numeric score is 8, followed by 4.
+   - The most common Prosper rating alpha is **C**, while the least common is **AA**.
+
+### Loan Distribution
+6. **Top Borrowing States**:
+   - The top 10 states for borrowing are: CA, TX, NY, FL, IL, OH, GA, VA, NJ, and PA.
+7. **Loan Purpose**:
+   - Most loans are used for debt consolidation, followed by other unspecified purposes and home improvement.
+
+---
+
+## Key Insights
+
+### Correlations and Trends
+1. **Correlation of Loan Amount**:
+   - Loan original amount and monthly loan payment are highly correlated.
+   - Borrower interest rate is negatively correlated with Prosper scores and loan amounts.
+2. **Borrower Categories**:
+   - Employed borrowers take the highest loan amounts, followed by "Other" and full-time employees.
+   - Higher-income borrowers tend to receive higher loan amounts.
+
+### Prosper Ratings and Income
+3. **Income and Ratings**:
+   - Borrowers with Prosper ratings from **AA to D** have higher loan amounts and higher salaries.
+   - The majority of borrowers fall under the Prosper rating of **B**, regardless of income range.
+
+### Homeownership and Interest Rates
+4. **Homeownership Influence**:
+   - Homeowners tend to have lower interest rates and higher Prosper ratings.
+   - Borrowers without homeownership typically have higher interest rates and lower Prosper ratings.
+
+---
 
 ## Key Insights for Presentation
 
-we can say that the loan approval status is heavily dependent on the applicant's information on IncomeRange, Homeownerstatus and employment status.
+### Loan Approval Dependence
+- Loan approval status heavily depends on:
+  1. **Income Range**
+  2. **Homeownership Status**
+  3. **Employment Status**
 
-For Applicants with prosper ratings from AA to D have the higher loan amount with increased salary.
+### Borrower Prosper Ratings
+- Applicants with Prosper ratings from **AA to D** receive higher loan amounts, correlating with higher salaries.
+- Borrowers rated **HR** (High Risk) tend to have the highest interest rates.
 
-Employed and full time employees have their mean salaries in higher range.
+### Employment and Loan Distribution
+- Employed and full-time employees exhibit higher mean salaries.
+- Borrowers in Prosper ratings of **AA, A, and B** generally have higher monthly incomes and loan amounts.
 
-Majority of the borrowers are falling under prosper rating of B , irrespective of the income range.
+---
 
-The monthly income of borrowers are having higher values for employed, other and full time employment status with the prosper rating of AA, A and B.
+## Tools and Libraries
 
-We observe that without homeowner tend to have a higher interest rate, and thus lower rating.However homeowner tends to have lower interest rate and higher rating. So we can safely say that homeowner is safest bet when gving a loan. We can also clearly observe that HR prosper rating applicants have higher interest rates.
+- **Python Libraries**:
+  - `pandas` and `numpy`: For data manipulation and cleaning.
+  - `matplotlib` and `seaborn`: For visualizations.
+- **Jupyter Notebook**: For documenting and executing the analysis.
+
+---
+
+## How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ProsperLoanAnalysis.git
+   ```
+2. Load the dataset and run the Jupyter Notebook.
+3. Explore the visualizations and insights presented in the analysis.
+
+---
+
+## Future Enhancements
+
+1. Build predictive models to assess default risk based on borrower attributes.
+2. Perform a time-series analysis of loan trends.
+3. Create an interactive dashboard using Power BI or Tableau for deeper insights.
